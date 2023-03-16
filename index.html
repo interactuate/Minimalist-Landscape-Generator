@@ -21,11 +21,13 @@
     <h3>Canvas size</h3>
     <div class="setting">
       <label for="canvasWidth">Width</label>
-      <input type="range" name="canvasWidth" id="canvasWidth" min="300" max="1920" value="300">
+      <output id="valueWidth"></output>
+      <input type="range" name="canvasWidth" id="canvasWidth" min="300" max="1920" value="300" step="10">
     </div>
     <div class="setting">
       <label for="canvasHeight">Height</label>
-      <input type="range" name="canvasHeight" id="canvasHeight" min="300" max="1920" value="300">
+      <output id="valueHeight"></output>
+      <input type="range" name="canvasHeight" id="canvasHeight" min="300" max="1920" value="300" step="10">
     </div>
     <h3>Colors</h3>
     <div class="setting">
@@ -69,6 +71,20 @@
     </main>
   </div>
   <script src="sketch.js"></script>
+  <script>
+    const valueH = document.querySelector("#valueHeight");
+    const inputH = document.querySelector("#canvasHeight");
+    valueH.textContent = inputH.value;
+    inputH.addEventListener("input", (event) => {
+      valueH.textContent = event.target.value + 'px';
+    });
+    const valueW = document.querySelector("#valueWidth");
+    const inputW = document.querySelector("#canvasWidth");
+    valueW.textContent = inputW.value;
+    inputW.addEventListener("input", (event) => {
+      valueW.textContent = event.target.value + 'px';
+    });
+  </script>
 </body>
 
 </html>
