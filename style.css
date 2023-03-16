@@ -40,7 +40,6 @@ div.wrapper {
   height: 100vh;
   padding: 32px;
   overflow: hidden;
-
 }
 
 main.canvas {
@@ -67,7 +66,6 @@ canvas {
   display: flex;
   flex-direction: column;
   gap: 8px;
-
   background: rgba(38, 38, 38, 0.9);
   color: #ffffff;
   /* border-radius: 12px; */
@@ -112,7 +110,6 @@ canvas {
 .toggle-panel:hover + .settings-panel * {
   opacity: 0;
   transition: opacity 0.2s cubic-bezier(0.83, 0, 0.17, 1);
-
 }
 
 .setting {
@@ -127,7 +124,7 @@ input[type="color"] {
   background: transparent;
   border: none;
   height: 36px;
-  width: 72px;
+  width: 36px;
   padding: 0;
   cursor: pointer;
 }
