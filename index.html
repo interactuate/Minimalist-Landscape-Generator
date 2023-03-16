@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Random Landscape Generator</title>
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+  <script src="libraries/p5.min.js"></script>
+  <script src="libraries/p5.sound.min.js"></script>
+</head>
+
+<body>
+  <h1>Minimalist<br>Landscape<br>Generator</h1>
+  <div class="toggle-panel"><span>Hide</span></div>
+  <div class="settings-panel">
+    <h2>Settings panel</h2>
+    <h3>Canvas size</h3>
+    <div class="setting">
+      <label for="canvasWidth">Width</label>
+      <input type="range" name="canvasWidth" id="canvasWidth" min="400" max="1920" value="800">
+    </div>
+    <div class="setting">
+      <label for="canvasHeight">Height</label>
+      <input type="range" name="canvasHeight" id="canvasHeight" min="400" max="1920" value="800">
+    </div>
+
+    <h3>Colors</h3>
+    <div class="setting">
+      <label for="color-1" class="">Sky</label>
+      <input type="color" name="color-1" id="color-1" value="#eeeeee">
+    </div>
+    <div class="setting">
+      <label for="color-2" class="">First color</label>
+      <input type="color" name="color-2" id="color-2" value="#a6a6a6">
+    </div>
+    <div class="setting">
+      <label for="color-3" class="">Second color</label>
+      <input type="color" name="color-3" id="color-3" value="#4d4d4d">
+    </div>
+    <div class="setting">
+      <label for="color-4" class="">Third color</label>
+      <input type="color" name="color-4" id="color-4" value="#262626">
+    </div>
+
+    <h3>Shapes</h3>
+    <div class="setting">
+      <label for="shapeUpdater">Update shapes</label>
+      <input type="button" value="Generate" id="shapeUpdater">
+    </div>
+
+    <div class="setting">
+      <label for="detail">Details</label>
+      <input type="range" name="detail" id="detail" min="2" max="7" value="2">
+    </div>
+
+    <h3>Save file</h3>
+    <div class="setting">
+      <label for="fileName">File name</label>
+      <input type="text" name="fileName" id="fileName" value="MyCanvas">
+    </div>
+    <input type="button" id="saveButton" value="Save PNG">
+  </div>
+
+  <div class="wrapper">
+    <main class="canvas">
+    </main>
+  </div>
+  <script src="sketch.js"></script>
+</body>
+
+</html>
