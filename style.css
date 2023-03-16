@@ -124,7 +124,7 @@ input[type="color"] {
   background: transparent;
   border: none;
   height: 36px;
-  width: 36px;
+  width: 72px;
   padding: 0;
   cursor: pointer;
 }
@@ -136,6 +136,7 @@ input[type="color"]::-webkit-color-swatch-wrapper {
 input[type="color"]::-webkit-color-swatch {
   border: none;
   border: 1px solid #ffffff;
+  border-radius: 1px;
 }
 
 input[type="button"]:hover {

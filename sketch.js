@@ -6,7 +6,7 @@ let heightController;
 let saveButton;
 
 function setup() {
-  createCanvas(800, 800);
+  createCanvas(300, 300);
   frameRate(10);
   noStroke(255);
 
