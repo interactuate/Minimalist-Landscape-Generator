@@ -5,7 +5,10 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Random Landscape Generator</title>
+  <title>Minimalist Landscape Generator</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" type="text/css" href="style.css">
 
@@ -22,12 +25,12 @@
     <div class="setting">
       <label for="canvasWidth">Width</label>
       <output id="valueWidth"></output>
-      <input type="range" name="canvasWidth" id="canvasWidth" min="300" max="1920" value="300" step="10">
+      <input type="range" name="canvasWidth" id="canvasWidth" min="300" max="1920" value="540" step="10">
     </div>
     <div class="setting">
       <label for="canvasHeight">Height</label>
       <output id="valueHeight"></output>
-      <input type="range" name="canvasHeight" id="canvasHeight" min="300" max="1920" value="300" step="10">
+      <input type="range" name="canvasHeight" id="canvasHeight" min="300" max="1920" value="540" step="10">
     </div>
     <h3>Colors</h3>
     <div class="setting">
@@ -74,15 +77,15 @@
   <script>
     const valueH = document.querySelector("#valueHeight");
     const inputH = document.querySelector("#canvasHeight");
-    valueH.textContent = inputH.value + 'px';
+    valueH.textContent = inputH.value * 2 + 'px';
     inputH.addEventListener("input", (event) => {
-      valueH.textContent = event.target.value + 'px';
+      valueH.textContent = event.target.value * 2 + 'px';
     });
     const valueW = document.querySelector("#valueWidth");
     const inputW = document.querySelector("#canvasWidth");
-    valueW.textContent = inputW.value + 'px';
+    valueW.textContent = inputW.value * 2 + 'px';
     inputW.addEventListener("input", (event) => {
-      valueW.textContent = event.target.value + 'px';
+      valueW.textContent = event.target.value * 2 + 'px';
     });
   </script>
 </body>

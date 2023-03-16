@@ -1,12 +1,12 @@
 let nMtn = 5;
 let landscape = [];
-let rdmSeed = 13847;
+let rdmSeed = 0;
 let widthController;
 let heightController;
 let saveButton;
 
 function setup() {
-  createCanvas(300, 300);
+  createCanvas(540, 540);
   frameRate(10);
   noStroke(255);
 
