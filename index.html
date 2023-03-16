@@ -74,13 +74,13 @@
   <script>
     const valueH = document.querySelector("#valueHeight");
     const inputH = document.querySelector("#canvasHeight");
-    valueH.textContent = inputH.value;
+    valueH.textContent = inputH.value + 'px';
     inputH.addEventListener("input", (event) => {
       valueH.textContent = event.target.value + 'px';
     });
     const valueW = document.querySelector("#valueWidth");
     const inputW = document.querySelector("#canvasWidth");
-    valueW.textContent = inputW.value;
+    valueW.textContent = inputW.value + 'px';
     inputW.addEventListener("input", (event) => {
       valueW.textContent = event.target.value + 'px';
     });
